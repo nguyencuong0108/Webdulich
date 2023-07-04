@@ -1,0 +1,294 @@
+.page_content{
+    width: 500px;
+    margin: 0 auto; 
+}
+.header {
+	width: 100%;
+    height: 60px;
+    background: #332b21;
+}
+.title_header {
+	color: #f4e60e;
+	margin-top: 20px;
+    margin-left: -15px;
+}
+.col_search {
+	padding: 13px;
+	position: relative;
+}
+.input_search {
+	width: 90%;
+}
+.col_search button {
+    position: absolute;
+    top: 19px;
+    right: 15%;
+    border: none; 
+    background: no-repeat;
+}
+.menu {
+	width: 100%;
+    height: 60px;
+    background: #332b21;
+    border-top: 2px solid #a58904;
+}
+.menu_center {
+	color: #f4da1a;
+	width: 85%;
+    margin: 0 auto;
+    font-size: 20px
+}
+.menu_center ul {
+	list-style: none;
+}
+.menu_center ul li{
+	float: left;
+    margin-right: 40px;
+}
+.menu_center ul li a{
+	color: #f4da1a !important; 
+}
+.hei{
+	height: 100%;
+}
+.img_logo {
+	width: 100%;
+    height: 100%;
+}
+
+
+.nav_menu ul{
+    display: flex;
+}
+.nav_menu> ul li{
+    list-style: none; /* bỏ dấu chấm mặc định của li */
+    border-left:1px solid #333;
+}
+.nav_menu> ul li a{
+    display: block;
+    padding: 0 25px;
+    line-height: 50px;
+    color: #f1f2f3;
+    text-decoration: none;
+}
+.nav_menu ul li:first-child {
+    border-left: none; /* bỏ đường kè trái của phần tử đầu tiên */
+}
+.nav_menu> ul li:first-child a{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+/* Khi hover đến li, tô màu cho thẻ a */
+.nav_menu ul li:hover>a{
+    background: red;
+    opacity: .7;
+    color: yellow;
+    height: 100%;
+}
+/*menu con*/
+/*Ẩn các menu con cấp 1,2,3*/
+.nav_menu li ul{
+    display: none;
+    min-width: 350px;
+    position: absolute;
+    width: 190px;
+}
+.nav_menu li>ul li{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: #999;
+    text-align: left;
+}
+.nav_menu li>ul li:first-child a{
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.nav_menu li>ul li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.nav_menu li>ul li:last-child a{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/*khi hover thì hiện menu con*/
+.nav_menu ul li:hover ul{
+    display:  block !important;
+    z-index: 9;
+}
+/*Hiển thị menu con cấp 2,3,4 bên cạnh phải*/
+.nav_menu > ul li > ul li >ul{
+    margin-left: 352px;
+    margin-top: -50px;
+}
+.item img {
+	height: 500px !important;
+}
+.row_custom {
+	margin-right:0px !important;
+}
+.route_head {
+	width: 100%;
+    height: 60px;
+    text-align: center;
+    padding-top: 14px;
+    color: #f4da1a;
+    font-size: 20px;
+    border-bottom: 2px solid #a58904;
+    border-top: 2px solid #a58904;
+}
+.session {
+	width: 100%;
+    height: auto;
+    background: #c0f269;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.session_head {
+	font-size: 30px;
+    text-align: center;
+    padding: 30px;
+}
+.img_sesion img {
+	width: 100%;
+}
+.pr0 {
+	padding-right: 0px !important;
+}
+.bgf {
+	background: #fff;
+}
+.cont_ {
+	padding: 20px;
+}
+.cont_ span, .fn20{
+	font-size: 20px !important;
+}
+.fn23 {
+	font-size: 23px;
+}
+.fn16 {
+	font-size: 16px;
+}
+.listtype_none {
+	list-style: none;
+}
+.pcd{
+	font-size: 21px;
+    padding: 10px;
+}
+.pdr0{
+	padding-right: 0px !important;
+}
+.ul_footer {
+	float: right;
+    list-style: none;
+    font-size: 23px;
+}
+.ul_footer li {
+	float: left;
+	margin-right: 40px;
+}
+.footer {
+	padding: 20px;
+	background: #252525;	
+	color: #ffff;
+    width: 100%;
+    bottom: 0;
+}
+.line{
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+}
+.img-avas {
+    width: 40px;
+    border-radius: 100%;
+    height: 40px;
+    margin-top: 8px;
+}
+.name-user {
+    position: relative;
+    top: 7px;
+    font-size: 15px;
+    color: white;
+}
+
+.form-login-cms{
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 350px;
+    margin: 0 auto 100px;
+    padding: 30px;
+    text-align: center;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%);
+}
+.head-login .info {
+    margin: 50px auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-login-cms input {
+    outline: 0;
+    border: 1px solid #e0e0e0 !important;
+    padding: 10px;
+    margin: 10px 0 0 0;
+    text-align: left;
+    width: 100%;
+    border-radius: 30px;
+}
+.login-btn {
+    background: #00b100 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 30px !important;
+    margin-top: 20px;
+    outline: 0 !important;
+    width: 100%;
+    border: 0 !important;
+    color: #FFFFFF;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.btn-sign-up {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 30px !important;
+    margin-top: 20px;
+    width: 100%;
+    border: 0 !important;
+    cursor: pointer;
+    outline: none;
+    background: #00b100 !important;
+}
+.sign-now {
+    font-size: 14px;
+    margin-top: 10px;
+}
+.logout {
+    position: absolute;
+    right: 0;
+}
+.logout:hover>a{
+    background: none !important;
+}
+.avatar_page {
+    width: 900px;
+    margin-top: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
+.ig_avat {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}

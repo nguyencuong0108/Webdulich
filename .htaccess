@@ -1,0 +1,21 @@
+Options +FollowSymLinks
+IndexIgnore *
+
+<IfModule mod_expires.c>
+ExpiresActive On
+############################################################
+## Add default Expires header
+## http://developer.yahoo.com/performance/rules.html#expires
+############################################################
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+ ExpiresDefault "access plus 1 year"
+</FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+</IfModule>
